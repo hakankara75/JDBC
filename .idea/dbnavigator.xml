@@ -13,14 +13,13 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="7ebad379-3979-4c7e-9d83-cd7213ec3c16">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from countries
-select * from ogrenciler;]]></console>
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from doctors;]]></console>
     </connection>
     <connection id="e15d7f19-2c46-48e5-80ff-9a3d2f1e7c4c">
-      <console name="Connection 1" type="STANDARD" schema="jdbc" session="Main" />
+      <console name="Connection 1" type="STANDARD" schema="jdbc" session="Main"><![CDATA[select * from doctor;]]></console>
     </connection>
     <connection id="75c458cb-4abf-4526-8975-89bffb0b6ffa">
-      <console name="Connection 2" type="STANDARD" schema="jdbc" session="Main" />
+      <console name="Connection 2" type="STANDARD" schema="jdbc" session="Main"><![CDATA[select * from doctor;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -30,6 +29,9 @@ select * from ogrenciler;]]></console>
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="e15d7f19-2c46-48e5-80ff-9a3d2f1e7c4c" dataset="public.urunler" active-filter-id="" />
+    <filter-actions connection-id="e15d7f19-2c46-48e5-80ff-9a3d2f1e7c4c" dataset="public.countries" active-filter-id="" />
+    <filter-actions connection-id="e15d7f19-2c46-48e5-80ff-9a3d2f1e7c4c" dataset="public.ogrenciler" active-filter-id="" />
     <filter-actions connection-id="7ebad379-3979-4c7e-9d83-cd7213ec3c16" dataset="public.countries" active-filter-id="" />
     <filter-actions connection-id="7ebad379-3979-4c7e-9d83-cd7213ec3c16" dataset="public.ogrenciler" active-filter-id="eb9c0398-4be8-46db-8ff4-89b9dff5cb6d">
       <filter id="eb9c0398-4be8-46db-8ff4-89b9dff5cb6d" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
