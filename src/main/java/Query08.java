@@ -9,6 +9,6 @@ public class Query08 {
         System.out.println("Ogrenci isimleri: " + getColumnData(sql01, "ogrenci_ismi"));
         System.out.println("Ogrenci sinifi: " + getColumnData(sql01, "sinif"));
 
-
+closeConnection();
     }
 }

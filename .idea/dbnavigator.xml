@@ -26,14 +26,16 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="7ebad379-3979-4c7e-9d83-cd7213ec3c16" object-ref="schemas/public/tables/ogrenciler" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="e15d7f19-2c46-48e5-80ff-9a3d2f1e7c4c" dataset="public.urunler" active-filter-id="" />
     <filter-actions connection-id="e15d7f19-2c46-48e5-80ff-9a3d2f1e7c4c" dataset="public.countries" active-filter-id="" />
     <filter-actions connection-id="e15d7f19-2c46-48e5-80ff-9a3d2f1e7c4c" dataset="public.ogrenciler" active-filter-id="" />
     <filter-actions connection-id="7ebad379-3979-4c7e-9d83-cd7213ec3c16" dataset="public.countries" active-filter-id="" />
-    <filter-actions connection-id="7ebad379-3979-4c7e-9d83-cd7213ec3c16" dataset="public.ogrenciler" active-filter-id="eb9c0398-4be8-46db-8ff4-89b9dff5cb6d">
+    <filter-actions connection-id="7ebad379-3979-4c7e-9d83-cd7213ec3c16" dataset="public.ogrenciler" active-filter-id="">
       <filter id="eb9c0398-4be8-46db-8ff4-89b9dff5cb6d" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="cinsiyet" operator="=" value="" active="true" />
       </filter>

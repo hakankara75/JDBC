@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static utilities.DatabaseUtilty.closeConnection;
 import static utilities.DatabaseUtilty.createConnection;
 
 public class Query09 {
@@ -42,9 +43,12 @@ public class Query09 {
             data.setDouble(4, each.getUcret());
             data.addBatch();    //Dataları bir araya getirir
         }
-        data.executeBatch();
+        data.executeBatch(); //tek seferde datalari yollar
+
         con.close();
         data.close();
+       // closeConnection();
+        //2 kapatma komutu yerine bu tek metot yeter.
     }
 
 }

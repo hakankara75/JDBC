@@ -1,34 +1,18 @@
-package utilities;
+package utilities.utilities;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseUtilty {
-
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
 
-    public static void closeConnection() {
-        try {
-            if (resultSet != null) {
-                resultSet.close();
-            }
-            if (statement != null) {
-                statement.close();
-            }
-            if (connection != null) {
-                connection.close();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
     public static void createConnection() {
         String url = "jdbc:postgresql://localhost:5432/jdbc";
         String user = "postgres";
-        String password = "533burak";
+        String password = "12345";
         try {
             connection = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
@@ -83,5 +67,21 @@ public class DatabaseUtilty {
             e.printStackTrace();
         }
         return columns;
+    }
+
+    public static void closeConnection() {
+        try {
+            if (resultSet != null) {
+                resultSet.close();
+            }
+            if (statement != null) {
+                statement.close();
+            }
+            if (connection != null) {
+                connection.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
