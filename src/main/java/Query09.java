@@ -19,8 +19,8 @@ public class Query09 {
         //3. statement
         Statement st = con.createStatement();
 //4. adim doctor tablosu olusturacagim
-//        String sql01= "create table doctors(id int, isim varchar(30), bolum varchar(20), ucret int)";
-//        st.execute(sql01);
+       String sql01= "create table doctors(id int, isim varchar(30), bolum varchar(20), ucret int)";
+        st.execute(sql01);
 
  //5.adim pojo class kullanarak tabloya veri ekleyecegim
         List<Doctors> kayitlar=new ArrayList<>();
@@ -47,8 +47,7 @@ public class Query09 {
 
         con.close();
         data.close();
-       // closeConnection();
-        //2 kapatma komutu yerine bu tek metot yeter.
+        closeConnection();  //2 kapatma komutu yerine bu tek metot yeter.
     }
 
 }

@@ -18,7 +18,7 @@ public class Query07 {
     Statement st = con.createStatement();
 
 // SORU: Urunler adında bir tablo olusturalım (id int, isim varchar(10), fiyat int)
-//st.execute("create table urunler(id int, isim varchar(10), fiyat int)");
+st.execute("create table urunler(id int, isim varchar(10), fiyat int)");
 
 
 //cok miktarda kayit eklemek icin PreparedStatement metodu kullanilir. Bunun haricinde pojo class kullanilir.
@@ -41,5 +41,11 @@ public class Query07 {
             tablo.addBatch();//tüm veriler birlesiyor bu komutla
         }
         tablo.executeBatch();  //tüm veriler tek seferde beraber gidiyor bu komutla
+
+
+        st.close();
+        tablo.close();
+
     }
+
 }

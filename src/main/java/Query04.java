@@ -21,6 +21,9 @@ public class Query04 {
         System.out.println("1. sutunun ismi : "+rsmd.getColumnName(1));
         System.out.println("Tablo ismi: "+rsmd.getTableName(1));
         System.out.println("Sutun data tipi: "+rsmd.getColumnTypeName(1));
+        con.close();
+        st.close();
+        rs.close();
 
     }
 }

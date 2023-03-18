@@ -13,8 +13,8 @@ public class Query06 {
             "postgres",
             "533burak");
     //3. statement
-//    Statement st = con.createStatement();
-//    st.executeUpdate("insert into ogrenciler values (800, 'Ali Can' , 11, 'E')");
+   Statement st = con.createStatement();
+    st.executeUpdate("insert into ogrenciler values (800, 'Ali Can' , 11, 'E')");
         PreparedStatement ps= con.prepareStatement("insert into ogrenciler values (?, ? , ?, ?)"); // datalarin
         //giris formatini belirtiyorum.
 /* Aynı SQL kodlarını kullacaksak statement değil preparedstatement kullanırız.
@@ -29,6 +29,7 @@ public class Query06 {
         ps.setString(4,"E"); //4 rakami yukaridaki formattaki sirayi ifade eder.
         ps.executeUpdate();
 
+        st.close();
         ps.close();
         con.close();
 }

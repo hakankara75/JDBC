@@ -39,6 +39,9 @@ st.executeUpdate("insert into ogrenciler values (300, 'Sena Can', 12, 'K')");
             st.addBatch(each); //datalari loop icinde bir araya getirir, tek seferde gonderir, ekler.
         }
         st.executeBatch();
+        con.close();
+        st.close();
+
 }
 
 
